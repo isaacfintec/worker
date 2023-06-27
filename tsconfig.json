@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "target": "es6",
+    "module": "commonjs",
+    "pretty": true,
+    "outDir": "dist",
+    "strict": false,
+    "noImplicitReturns": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "baseUrl": "." /* Specify the base directory to resolve non-relative module names. */,
+    "paths": {
+      "@core/*": ["src/core/*"],
+      "@src/*": ["src/*"]
+    }
+  },
+  "lib": ["es2015"],
+  "include": ["src/**/*.ts"],
+  "exclude": ["src/**/*.spec.ts", "./node_modules/", "./dist/"]
+}

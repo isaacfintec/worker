@@ -1,0 +1,24 @@
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": ["eslint:recommended", "plugin:@typescript-eslint/recommended"],
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "parserOptions": {
+        "ecmaVersion": 2020,
+        "sourceType": "module",
+        "project": "./tsconfig.json"
+      }
+    }
+  ],
+  "rules": {
+    "@typescript-eslint/indent": ["error", 2],
+    "@typescript-eslint/no-unused-vars": "warn",
+    "@typescript-eslint/no-explicit-any": "error",
+    "@typescript-eslint/ban-types": "off"
+  },
+  "env": {
+    "node": true,
+    "jest": true
+  }
+}
